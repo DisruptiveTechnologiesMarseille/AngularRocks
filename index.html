@@ -29,30 +29,56 @@
     <div class="reveal">
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
-        <section>
-        <h1>AngularJS Rocks</h1>
-        <h3>Pourquoi AngularJS est mieux que Meteor ?</h3>
-        <p>
-        <small><a href="http://thomas.brelet.net">Thomas Brelet</a> / <a href="http://twitter.com/toam">@toam</a></small>
-        </p>
+        <section data-markdown>
+        # AngularJS Rocks
+        ### Pourquoi AngularJS est mieux que Meteor ?
+
+        [Thomas Brelet](http://thomas.brelet.net) / [@toam](http://www.twitter.com/toam)
+        </section>
+
+        <section data-markdown>
+        ## Sommaire MK
+        - Angular JS
+        - A quoi ça sert ?
         </section>
 
         <section>
-        <h2>Sommaire</h2>
-        <ul>
-          <li>...</li>
-        </ul>
+        <section data-markdown>
+        ## AngularJS ?
+        - Framework JS client
+        - Développé par Google
+        </section>
+        <section data-markdown>
+        ## Javascript
+        ```
+        <p id="greeting"></p>
+        ```
+
+        ```javascript
+        var isIE = document.attachEvent;
+        var addListener = isIE
+          ? function(e, t, fn) { e.attachEvent('on' + t, fn); }
+          : function(e, t, fn) { e.addEventListener(t, fn, false); };
+
+        addListener(document, 'load', function(){
+          var greeting = document.getElementById('greeting');
+          if (isIE) {
+            greeting.innerText = 'Hello World!';
+          } else {
+            greeting.textContent = 'Hello World!';
+          }
+        });
+        ```
+        </section>
         </section>
 
-        <section>
-        <h2>Titre</h2>
-        <p>
+        <section data-markdown>
+        ##A quoi ça sert ?
         ...
-        </p>
         </section>
 
-        <section>
-        <h1>FIN</h1>
+        <section data-markdown>
+        # FIN
         </section>
       </div>
     </div>

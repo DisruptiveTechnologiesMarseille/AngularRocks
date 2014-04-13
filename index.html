@@ -31,30 +31,42 @@
       <div class="slides">
         <section data-markdown>
         # AngularJS Rocks
-        ### Pourquoi AngularJS est mieux que Meteor ?
+        <img src="images/angularjs-logo.png" width="300" alt=""/>
 
         [Thomas Brelet](http://thomas.brelet.net) / [@toam](http://www.twitter.com/toam)
         </section>
 
         <section data-markdown>
-        ## Sommaire MK
-        - Angular JS
+        ## Sommaire
+        - AngularJS ?
         - A quoi ça sert ?
         </section>
 
-        <section>
         <section data-markdown>
         ## AngularJS ?
         - Framework JS client
         - Développé par Google
         </section>
+
+        <section>
+        <section data-markdown>
+        ##A quoi ça sert ?
+        </section>
+        <section data-markdown>
+        ## HTML
+
+        ```
+        &lt;p id=&quot;greeting&quot;&gt;Hello World!&lt;/p&gt;
+        ```
+        </section>
         <section data-markdown>
         ## Javascript
+
         ```
-        <p id="greeting"></p>
+        &lt;p id=&quot;greeting&quot;&gt;&lt;/p&gt;
         ```
 
-        ```javascript
+        ```
         var isIE = document.attachEvent;
         var addListener = isIE
           ? function(e, t, fn) { e.attachEvent('on' + t, fn); }
@@ -70,11 +82,34 @@
         });
         ```
         </section>
+        <section data-markdown>
+        ## JQuery
+
+        ```
+        &lt;p id=&quot;greeting&quot;&gt;&lt;/p&gt;
+        ```
+
+        ```
+        $(function(){
+          $('#greeting2').text('Hello World!');
+        });
+        ```
+        </section>
+        <section data-markdown>
+        ## Angular
+        ```
+        &lt;p ng:init=&quot;greeting = 'Hello World!'&quot;&gt;{{greeting}}&lt;/p&gt;
+        ```
+        <!-- <p ng:init="greeting = 'Hello World!'">{{greeting}}</p> -->
+        </section>
         </section>
 
         <section data-markdown>
-        ##A quoi ça sert ?
-        ...
+        ## Data Binding
+        </section>
+
+        <section data-markdown>
+        ## Les directives
         </section>
 
         <section data-markdown>
